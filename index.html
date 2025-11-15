@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Finance Tracker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracking App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Personal Finance Tracker</h1>
+  <div class="container">
+    <h1>Finance Tracking App</h1>
 
-        <form id="transaction-form">
-            <input type="text" id="title" placeholder="Transaction Title" required>
-            <input type="number" id="amount" placeholder="Amount" required>
-            <input type="date" id="date" required>
-            <select id="type">
-                <option value="income">Income</option>
-                <option value="expense">Expense</option>
-            </select>
-            <input type="text" id="category" placeholder="Category">
-            <button type="submit">Add Transaction</button>
-        </form>
+    <!-- Student Registration -->
+    <form id="registration-form">
+      <input type="text" id="student-name" placeholder="Student Name" required>
+      <select id="tier-select" required>
+        <option value="">Select Tier</option>
+        <option value="1">Tier 1 - 10,000 Naira (5% per week)</option>
+        <option value="2">Tier 2 - 20,000 Naira (10% per week)</option>
+        <option value="3">Tier 3 - 30,000 Naira (20% per week)</option>
+      </select>
+      <button type="submit">Join Group</button>
+    </form>
 
-        <div class="filters">
-            <select id="filter-type">
-                <option value="all">All</option>
-                <option value="income">Income</option>
-                <option value="expense">Expense</option>
-            </select>
-            <input type="text" id="filter-category" placeholder="Filter by Category">
+    <!-- Finance Dashboard -->
+    <h2>Finance Dashboard</h2>
+    <p>Total Savings: <span id="total-savings">0</span> Naira</p>
+    <ul id="student-list"></ul>
+  </div>
 
-            <button id="export-csv">Export CSV</button>
-        </div>
-        
-        <canvas id="financeChart" width="400" height="200"></canvas>
-        
-        <h2>Transactions</h2>
-        <ul id="transaction-list"></ul>
-
-        <h2>Summary</h2>
-        <p>Total Income: <span id="total-income">0</span></p>
-        <p>Total Expenses: <span id="total-expense">0</span></p>
-        <p>Balance: <span id="balance">0</span></p>
-    </div>
-
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
-
 </html>

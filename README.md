@@ -17,13 +17,14 @@ Fully responsive design for mobile, tablet, and desktop devices.
 Live Demo
 
 View Demo
- – replace with your GitHub Pages or Vercel link after deployment
+Hosted on vercel 
+(https://personal-finance-tracker-sigma-dun.vercel.app/)
 
 Setup & Usage
 
 Clone the repository:
 
-git clone https://github.com/<your-username>/personal-finance-tracker.git
+git clone https://github.com/MK-e-s-h/personal-finance-tracker.git
 cd personal-finance-tracker
 
 
@@ -50,7 +51,7 @@ personal-finance-tracker/
 
 Tech Stack
 
-Vanilla JavaScript (ES6)
+Vanilla JavaScript 
 
 HTML & CSS
 
