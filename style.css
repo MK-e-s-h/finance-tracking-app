@@ -79,6 +79,7 @@ canvas {
   height: auto;
 }
 
+/* media query */
 @media (max-width: 600px) {
   .filters input, .filters select, .filters button {
     width: 100%;
