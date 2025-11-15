@@ -4,12 +4,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+ /* container */
 .container {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background: #fff;
+  background: gold;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -41,7 +41,7 @@ li {
 }
 
 li button {
-  background: #ff4d4d;
+  background: maroon;
   border: none;
   color: white;
   padding: 5px 10px;
@@ -50,5 +50,5 @@ li button {
 }
 
 li button:hover {
-  background: #ff1a1a;
+  background: maroon;
 }
