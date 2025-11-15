@@ -1,83 +1,109 @@
-Personal Finance Tracker
+Finance Tracking App
 
-A simple and responsive Personal Finance Tracker built with vanilla JavaScript, HTML, and CSS. Track your income and expenses, categorize transactions, filter data, and view your balance—all in one place.
+A simple web application for tracking student savings in a group, allowing students to contribute multiple times to a tier, monitor weekly interest, and make partial withdrawals.
+
+This app simulates a savings group investing in a Play-to-Earn blockchain game, with dynamic updates and persistent storage.
 
 Features
 
-Add income and expense transactions with title, amount, date, and category.
+Student Registration
 
-Filter transactions by type (income/expense/all) and category.
+Students can register by entering their name and selecting a savings tier.
 
-View summary: total income, total expenses, and balance.
+Each tier has a fixed contribution and weekly interest:
 
-Persistent data: transactions are stored in localStorage to retain data across sessions.
+Tier 1: 10,000 Naira – 5% interest per week
 
-Fully responsive design for mobile, tablet, and desktop devices.
+Tier 2: 20,000 Naira – 10% interest per week
 
-Live Demo
+Tier 3: 30,000 Naira – 20% interest per week
 
-View Demo
- – replace with your GitHub Pages or Vercel link after deployment
+Multiple contributions by the same student in the same tier are summed automatically.
 
-Setup & Usage
+Savings Dashboard
 
-Clone the repository:
+Displays total savings by all members.
 
-git clone https://github.com/<your-username>/personal-finance-tracker.git
-cd personal-finance-tracker
+Shows a detailed breakdown of each student's contribution, weekly interest, and total withdrawable amount.
 
+Partial Withdrawals
 
-Open the app:
+Students can withdraw a portion of their savings without leaving the group.
 
-Open index.html in your browser.
+Withdrawal amount cannot exceed the student's current balance.
 
-No server setup is required.
+Students are removed from the group only when their balance reaches zero.
 
-Using the app:
+Tier Validation
 
-Fill in the Transaction Form and click Add Transaction.
+Ensures students can only contribute the correct amount for their chosen tier.
 
-Use the Filters to view specific types or categories.
+Persistent Data
 
-Check the Summary for your total income, expenses, and balance.
+Student contributions and balances are saved in localStorage, so data is retained across browser sessions.
+
+Responsive & User-Friendly
+
+Clean interface with inline inputs for withdrawals.
+
+Dynamic dashboard updates on registration or withdrawal.
+
+How to Use
+
+Open the App
+
+Open index.html in a web browser.
+
+Register a Student
+
+Enter the student’s name.
+
+Select a tier (Tier 1, 2, or 3).
+
+Click Submit.
+
+If the student already exists in the tier, the contribution will be added to their previous savings.
+
+View Dashboard
+
+See all students, their contributions, weekly interest, and total withdrawable amounts.
+
+Total savings by all members is displayed at the top.
+
+Withdraw Savings
+
+Enter the amount to withdraw in the input box next to the student.
+
+Click Withdraw.
+
+The dashboard will update automatically.
+
+If the student withdraws all funds, they are removed from the group.
 
 Project Structure
-personal-finance-tracker/
+finance-tracking-app/
+│
 ├── index.html       # Main HTML page
-├── style.css        # Styling
-├── app.js           # JavaScript logic
-└── README.md        # Project documentation
+├── style.css        # CSS styling
+└── app.js           # JavaScript logic for registration, contributions, and withdrawals
 
-Tech Stack
+Technologies Used
 
-Vanilla JavaScript (ES6)
+HTML5
 
-HTML & CSS
+CSS3
 
-localStorage (for data persistence)
+JavaScript (Vanilla)
 
-Future Improvements
+Browser localStorage for data persistence
 
-Add charts to visualize income vs. expenses.
+Additional Notes
 
-Add edit/delete transaction functionality.
+Maximum 12 unique students are allowed in the group.
 
-Add CSV export feature.
+Contributions and withdrawals are dynamic and update instantly on the dashboard.
 
-Add user authentication for personal data tracking.
+Supports multiple contributions per student and partial withdrawals.
 
-Git Workflow for Submission
-
-Create a branch:
-
-git checkout -b feature/add-transaction
-
-
-Commit changes with clear messages:
-
-git commit -m "Add transaction form with validation"
-
-
-Push branch and create a Pull Request (PR) to main:
-
-git push origin feature/add-transaction
+Designed to be simple, responsive, and user-friendly.
+echo "Updating README for PR test" >> README.md
